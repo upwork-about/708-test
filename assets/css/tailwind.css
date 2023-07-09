@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl text-center my-10 text-black leading-normal;
+  }
+  h2 {
+    @apply text-4xl text-center my-8 text-black leading-normal;
+  }
+  h3 {
+    @apply text-3xl text-center my-6 text-black leading-normal;
+  }
+  h4 {
+    @apply text-2xl text-black text-center my-6 text-black leading-normal;
+  }
+  h5 {
+    @apply text-xl text-black text-center my-4 text-black leading-normal;
+  }
+  body {
+    @apply leading-9 font-light text-xl;
+  }
+  img {
+    @apply text-center mx-auto;
+  }
+  p {
+    @apply mb-4;
+  }
+  label {
+    @apply font-semibold text-base;
+  }
+  input {
+    @apply inline mt-6 px-4 border border-gray-400 focus:ring-blue-300 focus:border-blue-300;
+  }
+  button {
+    @apply py-5 px-14 rounded-full text-2xl w-60 mx-auto text-center mt-10 bg-primary text-white;
+  }
+}
+
+@layer components {
+  .jbttn {
+    @apply py-5 px-14 rounded-full text-2xl w-60 mx-auto text-center mt-10;
+  }
+  .abttn {
+    @apply py-4 px-12 rounded-full text-xl w-60 mx-auto text-center;
+  }
+  .dbttn {
+    @apply py-3 px-6 rounded-md text-xl w-48 mx-auto text-center;
+  }
+  .jbttn-pink {
+    @apply bg-jpink text-white hover:bg-white hover:text-jpink hover:outline hover:outline-jpink hover:outline-2;
+  }
+  .jbttn-lav {
+    @apply bg-jlav text-white hover:bg-white hover:text-jpink hover:outline hover:outline-jpink hover:outline-2;
+  }
+  .jbttn-red {
+    @apply bg-jred text-white hover:bg-white hover:text-jpink hover:outline hover:outline-jpink hover:outline-2;
+  }
+  .jbttn-blue {
+    @apply bg-jblue text-white hover:bg-white hover:text-jred hover:outline hover:outline-jred hover:outline-2;
+  }
+  .jbttn-fuchsia {
+    @apply bg-jfuchsia text-white hover:bg-white hover:text-jfuchsia hover:outline hover:outline-jfuchsia hover:outline-2;
+  }
+  .jbttn-orange {
+    @apply bg-jorange text-white hover:bg-white hover:text-jfuchsia hover:outline hover:outline-jfuchsia hover:outline-2;
+  }
+  .jbttn-dash {
+    @apply bg-jbludash text-white hover:bg-white hover:text-jbludash hover:outline hover:outline-jbludash hover:outline-2;
+  }
+  .jobox {
+    @apply border border-gray-300 hover:border-gray-500 rounded items-center justify-center py-2;
+  }
+  .jsection {
+    @apply mt-14 mx-10;
+  }
+  .jsection-full {
+    @apply py-14;
+  }
+  .jsection-both {
+    @apply mx-20 py-14;
+  }
+  .flx-center {
+    @apply justify-center items-center;
+  }
+  .jbox {
+    @apply bg-white rounded p-8;
+  }
+  .faq {
+    @apply p-8 border border-gray-200 mb-8;
+  }
+  .content > p {
+    @apply pl-4 pt-2;
+  }
+  .grid-tables > div:nth-child(-n + 7) {
+    @apply bg-slate-50 font-semibold text-black uppercase text-sm;
+  }
+  .grid-tables > div {
+    @apply py-4;
+  }
+  .grid-header {
+    @apply bg-agreylt border-agreymd border-t border-b py-4;
+  }
+}
+.main-title-left {
+  margin-top: 7vw;
+  margin-left: 8vw;
+  width: 35vw;
+}
+.main-title-right {
+  margin-top: 8vw;
+  margin-right: 8vw;
+  width: 35vw;
+}
+.grid-row-a {
+  grid-template-rows: repeat(4, 2fr);
+}
+.style-menu > div {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  text-align: center;
+}
+.grid-9-a {
+  grid-template-columns: 60px 1fr 1fr 2fr 2fr 1fr 1fr 1fr 100px;
+}
+.grid-7-a {
+  grid-template-columns: 60px 1fr 1fr 2fr 2fr 1fr 1fr;
+}
+.grid-8-a {
+  grid-template-columns: 60px 1fr 1fr 2fr 2fr 2fr 1fr 1fr;
+}
+.dash-edit > div:nth-of-type(odd) {
+  text-align: right;
+  margin-right: 20px;
+}
+.background-descend {
+  background-color: #feeffa;
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+}
+.background-descend-2 {
+  width: 100%;
+  height: 180px;
+  background-color: #feeffa;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
+}
+.background-slant-30-40 {
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 80%);
+}
+.maxwnone {
+  max-width: none !important;
+}
+
+.card {
+  @apply bg-primary shadow-xl rounded-md p-4;
+}
+.btn {
+  @apply py-1 px-1 rounded-sm text-lg;
+}
